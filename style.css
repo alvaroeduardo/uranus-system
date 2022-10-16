@@ -1,0 +1,131 @@
+:root {
+	--blue-100: #5DD6F4;
+	--blue-200: #32CBF1;
+	--blue-300: #10BBE5;
+	--blue-400: #0D98BA;
+	--blue-500: #0A758F;
+	--blue-600: #075264;
+	--blue-700: #042F39;
+
+	--bg-color: #121212;
+
+	--text-color: #F8F8F8;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+	background-color: var(--bg-color);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	width: 100vw;
+	height: 100vh;
+	padding: 15rem;
+}
+
+#text-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: var(--text-color);
+}
+
+#text-info span {
+	padding: 1rem;
+	background-color: #042F39;
+	border-radius: 1rem;
+	font-weight: 500;
+	margin: 0 0 2rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 15rem;
+}
+
+#text-info hgroup {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 0 2rem 0;
+}
+
+#text-info h1 {
+	font-size: 6rem;
+	font-weight: 900;
+}
+
+#text-info h2 {
+	font-weight: 100;
+	letter-spacing: 3.2rem;
+}
+
+#text-info p {
+	font-size: 1.3rem;
+	font-weight: 200;
+}
+
+#logo {
+	width: 35%;
+}
+
+#contact {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 18rem;
+}
+
+#contact a {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	background: none;
+	font-size: 1.1rem;
+	font-weight: 500;
+	padding: 1rem;
+	border: 2px solid var(--blue-300);
+	border-radius: 5rem;
+	color: var(--blue-300);
+	outline: none;
+	cursor: pointer;
+	transition: 0.2s;
+	text-decoration: none;
+}
+
+#contact a:hover {
+	border: 2px solid var(--blue-100);
+}
+
+#contact>a>img {
+	width: 2rem;
+}
+
+@media (max-width: 1280px) {
+	body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#text-info {
+		margin: 0 0 5rem 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#logo {
+		display: none;
+	}
+}
